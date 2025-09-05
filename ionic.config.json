@@ -1,0 +1,7 @@
+{
+  "name": "taller_dos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
