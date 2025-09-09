@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router, RouterModule } from '@angular/router';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/angular/standalone';
 
 @Component({
@@ -15,12 +16,17 @@ import { IonContent, IonHeader, IonTitle, IonToolbar, IonButton } from '@ionic/a
     IonToolbar,
     IonButton,
     CommonModule,
-    FormsModule
+    FormsModule,
+    RouterModule  
   ]
 })
 export class HomePage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {}
 
   ngOnInit() {}
+
+  goToLogin() {
+    this.router.navigateByUrl('/login'); 
+  }
 }
