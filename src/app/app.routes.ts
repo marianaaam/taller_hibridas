@@ -18,8 +18,21 @@ export const routes: Routes = [
     path: 'login',
     loadComponent: () => import('./pages/login/login.page').then( m => m.LoginPage)
   },
+   
   {
-    path: '**', //Wild card - captura rutas no definidas
+  path: 'register',
+  loadComponent: () => import('./pages/register/register.page').then(m => m.RegisterPage)
+  },
+  {
+    path: '**', 
     redirectTo: '/splash'
-  } 
+  },
+  {
+    path: 'register',
+    loadComponent: () => import('./pages/register/register.page').then( m => m.RegisterPage)
+  },
+  {
+    path: 'inicio',
+    loadComponent: () => import('./pages/inicio/inicio.page').then(m => m.InicioPage)
+  },
 ];

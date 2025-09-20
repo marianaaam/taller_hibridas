@@ -1,0 +1,110 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="login-container">
+  <div class="login-box">
+    <!-- Logo y nombre -->
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="logo" class="app-logo" />
+      <h1 class="app-title">NombreDeLaApp</h1>
+    </div>
+
+    <p class="subtitle">Crea tu cuenta para comenzar</p>
+
+    <div class="form-scroll">
+      <!-- 👇 Aquí conectamos el formulario con TS -->
+      <form (ngSubmit)="onRegister()">
+        <!-- Nombres -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="nombres"
+            name="nombres"
+            label="Nombres"
+            labelPlacement="floating"
+            placeholder="Escribe tus nombres"
+            type="text"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Apellidos -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="apellidos"
+            name="apellidos"
+            label="Apellidos"
+            labelPlacement="floating"
+            placeholder="Escribe tus apellidos"
+            type="text"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Correo -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="correo"
+            name="correo"
+            label="Correo"
+            labelPlacement="floating"
+            placeholder="ejemplo@correo.com"
+            type="email"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Teléfono -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="telefono"
+            name="telefono"
+            label="Teléfono"
+            labelPlacement="floating"
+            placeholder="+57 300 000 0000"
+            type="tel"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Contraseña -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="contrasena"
+            name="contrasena"
+            label="Contraseña"
+            labelPlacement="floating"
+            placeholder="Crea tu contraseña"
+            type="password"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Repetir Contraseña -->
+        <ion-item class="input-field">
+          <ion-input
+            [(ngModel)]="repetirContrasena"
+            name="repetirContrasena"
+            label="Repetir Contraseña"
+            labelPlacement="floating"
+            placeholder="Repite tu contraseña"
+            type="password"
+            required>
+          </ion-input>
+        </ion-item>
+
+        <!-- Botón -->
+        <ion-button expand="block" class="login-btn" type="submit">
+          Registrarse
+        </ion-button>
+      </form>
+    </div>
+
+    <p class="register-text">
+      ¿Ya tienes cuenta?
+      <span class="register-link">Inicia sesión</span>
+    </p>
+  </div>
+</ion-content>

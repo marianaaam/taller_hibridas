@@ -263,6 +263,7 @@
       
     }
 
+
     /* Inputs */
     ion-item.input-field {
         margin-top: 70px;
@@ -276,6 +277,28 @@
       height: 20px;
       margin-right: 8px; 
     }
+    
+    ion-item.input-field {
+      margin: 14px 0;             /* menos espacio entre campos */
+      --min-height: 42px;        /* altura compacta */
+      --padding-start: 8px;
+      --inner-padding-end: 8px;
+      --background: #fff;        /* fondo blanco para contraste */
+      border-radius: 6px;
+    }
+
+    ion-input {
+      font-size: 14px;
+      --color: #000;             /* 👈 texto siempre negro */
+      --placeholder-color: #888; /* 👈 placeholder gris */
+      --placeholder-opacity: 1;  /* que no sea transparente */
+    }
+
+    ion-label {
+      font-size: 13px;
+      color: #666;
+    }
+
 
     .login-btn {
         
