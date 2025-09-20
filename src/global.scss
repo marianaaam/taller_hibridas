@@ -279,19 +279,19 @@
     }
     
     ion-item.input-field {
-      margin: 14px 0;             /* menos espacio entre campos */
-      --min-height: 42px;        /* altura compacta */
+      margin: 14px 0;  
+      --min-height: 42px;        
       --padding-start: 8px;
       --inner-padding-end: 8px;
-      --background: #fff;        /* fondo blanco para contraste */
+      --background: #fff;       
       border-radius: 6px;
     }
 
     ion-input {
       font-size: 14px;
-      --color: #000;             /* 👈 texto siempre negro */
-      --placeholder-color: #888; /* 👈 placeholder gris */
-      --placeholder-opacity: 1;  /* que no sea transparente */
+      --color: #000;             
+      --placeholder-color: #888; 
+      --placeholder-opacity: 1; 
     }
 
     ion-label {
